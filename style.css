@@ -58,3 +58,79 @@ div.icon {
     }
 
 }
+
+.hidden {
+    opacity: 0;
+    transition: ease-in 300ms;
+    transform: scale(0.6);
+    transform: rotate3d(0deg);
+    transform: translateY(30px)
+}
+
+.show {
+    opacity: 1;
+    transition: ease-in 300ms;
+    transform: scale(1);
+    transform: translateY(0);
+
+}
+
+#my-image {
+    height: auto;
+    width: 100%;
+}
+
+.plan-compare {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#my-button {
+    cursor: pointer;
+    background: var(--gradiente-naranja);
+    border: none;
+    padding: 1rem 4rem;
+    color: white;
+    border-radius: 10px;
+    transition: ease-in 300ms;
+}
+
+#my-button:hover {
+    transition: ease-in 300ms;
+    transform: translateY(-6px);
+    opacity: 0.6;
+}
+
+#my-button2 {
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    padding: 0.9rem 4rem;
+    border-radius: 10px;
+    transition: ease-in 300ms;
+}
+
+#my-button2:hover {
+    transform: translateY(-6px);
+    transition: ease-in 300ms;
+    background-color: #e8e8e8;
+}
