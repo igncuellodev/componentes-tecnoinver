@@ -1,14 +1,13 @@
-const myButton = document.getElementById("my-button");
-const myButton2 = document.getElementById("my-button2");
+const toggleBtn = document.getElementById("toggle-button");
 const plansTable = document.getElementById("my-image");
 
-myButton.addEventListener("click", addTableWidget);
-myButton2.addEventListener("click", removeTabletWidget);
+toggleBtn.addEventListener("click", () => {
+  plansTable.classList.toggle("show");
+  toggleBtn.classList.toggle("is-active");
 
-function addTableWidget() {
-  plansTable.classList.add("show");
-}
-
-function removeTabletWidget() {
-  plansTable.classList.remove("show");
-}
+  if (plansTable.classList.contains("show")) {
+    toggleBtn.textContent = "Ver menos -";
+  } else {
+    toggleBtn.textContent = "Comparar planes +";
+  }
+});

@@ -4,18 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      #toggle-button {
+        cursor: pointer;
+        background: transparent;
+        color: #8c8c8c;
+        border: 1px solid #e8e8e8;
+
+        padding: 1rem 0;
+        border-radius: 10px;
+        font-weight: 400;
+        min-width: 250px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-family: "Figtree";
+
+        transition: all 300ms ease;
+        margin-bottom: 2rem;
+      }
+
+      #toggle-button:hover {
+        background-color: #f9f9f9;
+        transform: translateY(-3px);
+        border-color: #d1d1d1;
+      }
+
+      #my-image {
+        display: none;
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+        width: 100%;
+        height: auto;
+        transition:
+          display 300ms allow-discrete,
+          opacity 300ms ease,
+          transform 300ms ease;
+      }
+
+      #my-image.show {
+        display: flex;
+        opacity: 1;
+        transform: scale(1) translateY(0);
+
+        @starting-style {
+          opacity: 0;
+          transform: scale(0.9) translateY(20px);
+        }
+      }
+    </style>
   </head>
   <body>
     <section class="plan-compare">
-        <div class="wrapper">
+      <div class="wrapper">
         <div class="button-wrapper">
-            <button id="my-button">Comparar planes +</button>
-            <button id="my-button2">Ver menos</button>
+          <button id="toggle-button">Comparar planes +</button>
         </div>
-    <img id="my-image" class="hidden" src="assets/table.png"></img>
-        </div>
-
+        <img
+          id="my-image"
+          src="https://www.tecnoinver.cl/wp-content/uploads/2026/04/table.avif"
+          alt="Tabla de planes"
+        />
+      </div>
     </section>
     <script src="main.js"></script>
   </body>
