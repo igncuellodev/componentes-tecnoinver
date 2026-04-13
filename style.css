@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree";
+}
+
+
+:root {
+    --font-size-h1: clamp(3rem, 8vw, 5rem);
+    --font-p-lg: clamp(1rem, 0.5vw + 0.875rem, 1.25rem);
+    --color-obsidian-50: #e7e7e8;
+    --color-white-500: #fff;
+}
+
+#hero-web-hosting-section {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://www.tecnoinver.cl/wp-content/uploads/2026/04/hero-bg.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+div.hero-wrapper-content {
+    max-width: 90rem;
+    width: 74.75rem;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+h1.font-h1 {
+    display: block;
+    font-size: var(--font-size-h1);
+    background: linear-gradient(90deg, #F7B63B 2.54%, #E76002 99.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+div.hero-left-content {
+    display: flex;
+    width: 36.4375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+}
+
+p.hero-web-hosting-text {
+    font-size: var(--font-p-lg);
+    color: var(--color-obsidian-50);
+    line-height: 1.875rem;
+}
+
+
+
+a.main-button {
+    background: linear-gradient(90deg, #F7B63B 2.54%, #E76002 99.85%);
+    color: var(--color-white-500);
+    text-decoration: none;
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 0.6rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
